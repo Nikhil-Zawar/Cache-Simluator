@@ -1,0 +1,31 @@
+Average values by parameter:
+Number of Sets: {'1': [1.0, 49.264433917259026, 160546210.6875, 1762.3125], '4': [1.0, 69.32274148205833, 86810968.86458333, 6995.25], '64': [1.0, 94.97841087021364, 18409651.114583332, 110196.0], '256': [1.0, 98.10224584941926, 12011762.604166666, 437328.0], '512': [1.0, 98.83434923146604, 10795133.208333334, 871200.0]}
+Number of Blocks: {'1': [1.0, 70.02216128444314, 98473581.35, 42295.75], '2': [1.0, 77.51098916651479, 73204770.025, 84591.5], '8': [1.0, 88.15247032735184, 36459823.74166667, 338366.0], '16': [1.0, 92.71612430202309, 22720806.066666666, 676732.0]}
+Bytes per Block: {'4': [1.0, 72.30372937826898, 23334265.725, 62048.7], '16': [1.0, 81.44047831093731, 45976485.7, 168264.0], '32': [1.0, 85.92203024980806, 64324978.5, 311767.65], '64': [1.0, 88.73550714131852, 97223251.25833334, 599904.9]}
+Write Allocation Policy: {'no-write-allocate': [1.0, 80.86015944733482, 52703167.8875, 285119.6625], 'write-allocate': [1.0, 82.72057468145739, 60220534.0, 285684.6375]}
+Write Back or Through Policy: {'write-back': [1.0, 82.7205746814574, 61606079.0, 286249.6125], 'write-through': [1.0, 81.79036706439618, 55769078.44375, 285119.6625]}
+LRU or FIFO Policy: {'lru': [1.0, 82.38432896873393, 56649422.208333336, 285496.3125], 'fifo': [1.0, 81.81654357143252, 58780068.38333333, 285496.3125]}
+
+Top 10 Hit Rates:
+Hit Rate: 99.80% - Cache Size: 2179072B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: lru
+Hit Rate: 99.80% - Cache Size: 2179072B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: fifo
+Hit Rate: 99.80% - Cache Size: 2174976B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: lru
+Hit Rate: 99.80% - Cache Size: 2174976B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: fifo
+Hit Rate: 99.80% - Cache Size: 2174976B - Sets: 512, Blocks: 8, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: lru
+Hit Rate: 99.80% - Cache Size: 2174976B - Sets: 512, Blocks: 8, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: fifo
+Hit Rate: 99.80% - Cache Size: 2170880B - Sets: 512, Blocks: 8, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: lru
+Hit Rate: 99.80% - Cache Size: 2170880B - Sets: 512, Blocks: 8, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: fifo
+Hit Rate: 99.80% - Cache Size: 4349952B - Sets: 512, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: lru
+Hit Rate: 99.80% - Cache Size: 4349952B - Sets: 512, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: fifo
+
+Top 10 Minimum Cycles:
+Total Cycles: 1195524 - Cache Size: 450560B - Sets: 512, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 1206224 - Cache Size: 450560B - Sets: 512, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 1419724 - Cache Size: 229376B - Sets: 256, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 1420324 - Cache Size: 225280B - Sets: 512, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 1423624 - Cache Size: 229376B - Sets: 256, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 1428124 - Cache Size: 225280B - Sets: 512, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 1535524 - Cache Size: 114688B - Sets: 256, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 1572524 - Cache Size: 114688B - Sets: 256, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 1654224 - Cache Size: 59392B - Sets: 64, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 1664824 - Cache Size: 1220608B - Sets: 512, Blocks: 16, Bytes: 16, Write1: write-allocate, Write2: write-back, Policy: lru

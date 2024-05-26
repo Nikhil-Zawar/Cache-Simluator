@@ -1,0 +1,34 @@
+valgrind --leak-check=full 
+
+Nikhil
+./csim 256 4 16 write-allocate write-through fifo < leak.txt
+total heap usage: 30,080 allocs, 30,080 frees, 1,038,120 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 write-allocate write-through lru < leak.txt
+total heap usage: 32,471 allocs, 32,471 frees, 1,146,512 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 write-allocate write-back fifo < leak.txt
+total heap usage: 30,080 allocs, 30,080 frees, 1,038,120 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 write-allocate write-back lru < leak.txt
+total heap usage: 32,471 allocs, 32,471 frees, 1,146,512 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 no-write-allocate write-through fifo < leak.txt
+total heap usage: 29,941 allocs, 29,941 frees, 1,032,847 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 no-write-allocate write-through lru < leak.txt
+total heap usage: 31,954 allocs, 31,954 frees, 1,124,103 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 no-write-allocate write-back fifo < leak.txt
+total heap usage: 29,941 allocs, 29,941 frees, 1,032,847 bytes allocated
+All heap blocks were freed -- no leaks are possible
+
+./csim 256 4 16 no-write-allocate write-back lru < leak.txt
+total heap usage: 31,954 allocs, 31,954 frees, 1,124,103 bytes allocated
+All heap blocks were freed -- no leaks are possible

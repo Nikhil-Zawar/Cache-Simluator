@@ -1,0 +1,32 @@
+
+Average values by parameter:
+Number of Sets: {'1': [1.0, 39.41999884012273, 114718597.375, 1762.3125], '4': [1.0, 60.288595740446944, 65940477.166666664, 6995.25], '64': [1.0, 88.9520866246912, 16802605.104166668, 110196.0], '256': [1.0, 93.38572432960746, 11420365.447916666, 437328.0], '512': [1.0, 94.00446181695048, 10679836.59375, 871200.0]}
+Number of Blocks: {'1': [1.0, 62.98526571083983, 69440608.23333333, 42295.75], '2': [1.0, 69.51954420671545, 56176108.475, 84591.5], '8': [1.0, 80.34272174269634, 32007179.083333332, 338366.0], '16': [1.0, 87.99316222120346, 18025609.558333334, 676732.0]}
+Bytes per Block: {'4': [1.0, 59.57378358559289, 18181203.541666668, 62048.7], '16': [1.0, 75.61067537838936, 34134143.11666667, 168264.0], '32': [1.0, 81.3823318260426, 47530198.71666667, 311767.65], '64': [1.0, 84.27390309143021, 75803959.975, 599904.9]}
+Write Allocation Policy: {'no-write-allocate': [1.0, 72.43709246255683, 36864278.0125, 285119.6625], 'write-allocate': [1.0, 76.59671397426715, 47436425.5, 285684.6375]}
+Write Back or Through Policy: {'write-back': [1.0, 76.59671397426723, 49284486.75, 286249.6125], 'write-through': [1.0, 74.51690321841197, 41226321.13125, 285119.6625]}
+LRU or FIFO Policy: {'lru': [1.0, 75.58378656499323, 43199527.145833336, 285496.3125], 'fifo': [1.0, 74.83656037573421, 44625225.52916667, 285496.3125]}
+
+Top 10 Hit Rates:
+Hit Rate: 98.86% - Cache Size: 2179072B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: lru
+Hit Rate: 98.86% - Cache Size: 2174976B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: lru
+Hit Rate: 98.86% - Cache Size: 2174976B - Sets: 512, Blocks: 8, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: lru
+Hit Rate: 98.86% - Cache Size: 2170880B - Sets: 512, Blocks: 8, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: lru
+Hit Rate: 98.86% - Cache Size: 4349952B - Sets: 512, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: lru
+Hit Rate: 98.86% - Cache Size: 4349952B - Sets: 512, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: fifo
+Hit Rate: 98.86% - Cache Size: 4341760B - Sets: 512, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: lru
+Hit Rate: 98.86% - Cache Size: 4341760B - Sets: 512, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: fifo
+Hit Rate: 98.86% - Cache Size: 2179072B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-back, Policy: fifo
+Hit Rate: 98.86% - Cache Size: 2174976B - Sets: 256, Blocks: 16, Bytes: 64, Write1: write-allocate, Write2: write-through, Policy: fifo
+
+Top 10 Minimum Cycles:
+Total Cycles: 4207793 - Cache Size: 450560B - Sets: 512, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 4295793 - Cache Size: 450560B - Sets: 512, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 4477993 - Cache Size: 229376B - Sets: 256, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 4480493 - Cache Size: 225280B - Sets: 512, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 4689393 - Cache Size: 114688B - Sets: 256, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 4693293 - Cache Size: 229376B - Sets: 256, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 4695593 - Cache Size: 225280B - Sets: 512, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 5168493 - Cache Size: 114688B - Sets: 256, Blocks: 8, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: fifo
+Total Cycles: 5214693 - Cache Size: 59392B - Sets: 64, Blocks: 16, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
+Total Cycles: 5375793 - Cache Size: 56320B - Sets: 512, Blocks: 2, Bytes: 4, Write1: write-allocate, Write2: write-back, Policy: lru
